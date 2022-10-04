@@ -86,11 +86,13 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+
 }
 
 .home .welcome {
     margin-top: 65px;
     height: 700px;
+
 }
 
 .home .welcome p {
@@ -651,7 +653,8 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: solid 7px rgba(255, 255, 255, 0.475)
+    border: solid 7px rgba(255, 255, 255, 0.475);
+
 }
 
 .swimhero .hero .caption {
@@ -860,6 +863,11 @@ footer .copy p a:hover {
 
 
 @media (max-width:580px) {
+   
+    .col-lg-12 {
+        padding: 0;
+    }
+
     body {
         background-image: url(../images/Picture1.jpg);
         background-size: 100% 100%;
@@ -873,6 +881,7 @@ footer .copy p a:hover {
         width: 100%;
         position: fixed;
         top: 0;
+
         z-index: 9999999999999;
         height: 65px;
         background-color: rgba(175, 238, 238, 0.716);
@@ -949,11 +958,13 @@ footer .copy p a:hover {
 
 
     .home {
+
         width: 100%;
         height: 700px;
         position: relative;
         display: flex;
         justify-content: center;
+
     }
 
     .home .welcome {
@@ -1038,7 +1049,6 @@ footer .copy p a:hover {
     .typeof .head {
         height: 320px;
         text-align: center;
-
     }
 
     .typeof .head img {
@@ -1050,6 +1060,7 @@ footer .copy p a:hover {
         animation-name: cloud;
         animation-duration: 7s;
         animation-iteration-count: infinite;
+
     }
 
     @keyframes cloud {
@@ -1212,7 +1223,7 @@ footer .copy p a:hover {
         width: 100%;
         height: 5600px;
         background-color: rgba(175, 238, 238, 0.716);
-        ;
+
     }
 
     .swimbenfit .head {
@@ -1230,6 +1241,7 @@ footer .copy p a:hover {
         animation-name: cloud;
         animation-duration: 7s;
         animation-iteration-count: infinite;
+
     }
 
     @keyframes cloud {
