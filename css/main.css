@@ -8,7 +8,6 @@ body {
     background-image: url(../images/Picture1.jpg);
     background-attachment: fixed;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -860,12 +859,13 @@ footer .copy p a:hover {
 }
 
 
-@media (max-width:780px) {
+@media (max-width:580px) {
     body {
         background-image: url(../images/Picture1.jpg);
         background-size: 100% 100%;
         background-attachment: fixed;
-     
+        overflow-x: hidden;
+
 
     }
 
@@ -876,6 +876,7 @@ footer .copy p a:hover {
         z-index: 9999999999999;
         height: 65px;
         background-color: rgba(175, 238, 238, 0.716);
+
     }
 
     .navbar .navbar-collapse {
@@ -1611,83 +1612,85 @@ footer .copy p a:hover {
         }
 
     }
-footer .about {
-    height: 300px;
 
-}
+    footer .about {
+        height: 300px;
 
-footer .about h1 {
-    color: white;
-    margin-top: 30px;
-    margin-left: 30px;
-}
+    }
 
-footer .about p {
-    margin-left: 30px;
-    color: white;
-    font-size: 18px;
-}
+    footer .about h1 {
+        color: white;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
 
-footer .refr {
-    position: relative;
-    top:120px;
-    height: 300px;
- 
+    footer .about p {
+        margin-left: 30px;
+        color: white;
+        font-size: 18px;
+    }
 
-}
-footer .refr h1 {
-    color: white;
-    margin-top: 30px;
-    margin-left: 50px;
-
-}
-
-footer .refr ul {
-    color: white;
-    margin-left: 50px;
-
-}
-
-footer .refr ul li {
-    margin-left: 20px;
-}
-
-footer .refr ul li a {
-    color: white;
-    text-decoration: none;
-}
+    footer .refr {
+        position: relative;
+        top: 120px;
+        height: 300px;
 
 
+    }
 
-footer .copy {
-    margin-top: 40px;
-    height: 300px;
-    font-size: 20px;
+    footer .refr h1 {
+        color: white;
+        margin-top: 30px;
+        margin-left: 50px;
+
+    }
+
+    footer .refr ul {
+        color: white;
+        margin-left: 50px;
+
+    }
+
+    footer .refr ul li {
+        margin-left: 20px;
+    }
+
+    footer .refr ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
 
-}
 
-footer .copy h1 {
-    color: white;
-    margin-top: 30px;
-    margin-left: 30px;
+    footer .copy {
+        margin-top: 40px;
+        height: 300px;
+        font-size: 20px;
 
-}
 
-footer .copy p {
-    color: white;
-    margin-left: 30px;
-    margin-top: 30px;
-}
+    }
 
-footer .copy p a {
-    color: white;
-    text-decoration: none;
-}
+    footer .copy h1 {
+        color: white;
+        margin-top: 30px;
+        margin-left: 30px;
 
-footer .copy p a:hover {
-    color: blue;
-}
+    }
+
+    footer .copy p {
+        color: white;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    footer .copy p a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .copy p a:hover {
+        color: blue;
+    }
 
 }
 
