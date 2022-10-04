@@ -939,7 +939,7 @@ footer .copy p a:hover {
         color: deepskyblue;
         font-size: 30px;
         position: fixed;
-        left: 290px
+        left: 310px
     }
 
     .navbar .nav-item .dropdown-menu {
@@ -1054,7 +1054,7 @@ footer .copy p a:hover {
     .typeof .head img {
         position: relative;
         top: 0;
-        right: 50px;
+        right: 20px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
@@ -1235,7 +1235,7 @@ footer .copy p a:hover {
     .swimbenfit .head img {
         position: relative;
         top: 0;
-        right: 53px;
+        right: 20px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
@@ -1496,7 +1496,7 @@ footer .copy p a:hover {
     .swimhero .head img {
         position: relative;
         top: 0;
-        right: 60px;
+        right: 20px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
