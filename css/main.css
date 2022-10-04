@@ -8,6 +8,7 @@ body {
     background-image: url(../images/Picture1.jpg);
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -864,7 +865,7 @@ footer .copy p a:hover {
         background-image: url(../images/Picture1.jpg);
         background-size: 100% 100%;
         background-attachment: fixed;
-        overflow-x: hidden;
+     
 
     }
 
@@ -872,7 +873,7 @@ footer .copy p a:hover {
         width: 100%;
         position: fixed;
         top: 0;
-        z-index: 1111111111;
+        z-index: 9999999999999;
         height: 65px;
         background-color: rgba(175, 238, 238, 0.716);
     }
@@ -1042,7 +1043,7 @@ footer .copy p a:hover {
     .typeof .head img {
         position: relative;
         top: 0;
-        right: 40px;
+        right: 50px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
@@ -1222,7 +1223,7 @@ footer .copy p a:hover {
     .swimbenfit .head img {
         position: relative;
         top: 0;
-        right: 40px;
+        right: 53px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
@@ -1482,7 +1483,7 @@ footer .copy p a:hover {
     .swimhero .head img {
         position: relative;
         top: 0;
-        right: 40px;
+        right: 60px;
         width: 395px;
         height: 300px;
         animation-name: cloud;
@@ -1537,7 +1538,7 @@ footer .copy p a:hover {
 
 
     footer {
-        height: 1700px;
+        height: 1000px;
         position: relative;
         overflow: hidden;
         background-color: #3586ff;
@@ -1634,9 +1635,16 @@ footer .refr {
  
 
 }
+footer .refr h1 {
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+
+}
 
 footer .refr ul {
     color: white;
+    margin-left: 50px;
 
 }
 
@@ -1649,11 +1657,7 @@ footer .refr ul li a {
     text-decoration: none;
 }
 
-footer .refr h1 {
-    color: white;
-    margin-top: 30px;
 
-}
 
 footer .copy {
     margin-top: 40px;
