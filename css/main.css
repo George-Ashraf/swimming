@@ -1114,16 +1114,11 @@ footer .copy p a:hover {
         margin: 0 15px;
         color: CornflowerBlue;
     }
-
-
-
-
-
     .swimbenfit {
         width: 100%;
         height: 3900px;
         background-color: rgba(175, 238, 238, 0.716);
-        ;
+        
     }
 
     .swimbenfit .head {
@@ -1570,8 +1565,6 @@ footer .copy p a:hover {
 
     footer .refr {
         height: 300px;
-        margin-top: 200px;
-
     }
 
     footer .refr ul {
