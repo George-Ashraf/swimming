@@ -5,14 +5,14 @@
 }
 
 .dark {
-    background-image: url(../images/night.jpeg);
+    background-image: url(../assets/images/night.jpeg);
     background-attachment: fixed;
     background-size: cover;
 }
 
 .nightsea {
     height: 240px;
-    background-image: url(../images/nightsea.jpeg);
+    background-image: url(../assets/images/nightsea.jpeg);
     background-size: 100% 100%;
     position: absolute;
     bottom: 0;
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(../images/Picture1.jpg);
+    background-image: url(../assets/images/Picture1.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -148,7 +148,7 @@ body {
 
 .home .sea {
     height: 220px;
-    background-image: url(../images/Picture2.jpg);
+    background-image: url(../assets/images/Picture2.jpg);
     background-size: 100% 100%;
     position: absolute;
     bottom: 0;
@@ -730,7 +730,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../images/wave.png);
+    background: url(../assets/images/wave.png);
     background-size: 1000px 100px;
     overflow: hidden;
 }
@@ -947,7 +947,7 @@ footer .copy p a:hover {
     .home .sea {
         height: auto;
         padding-bottom: 220px;
-        background-image: url(../images/Picture2.jpg);
+        background-image: url(../assets/images/Picture2.jpg);
         background-size: 100% 100%;
         position: absolute;
         bottom: 0;
