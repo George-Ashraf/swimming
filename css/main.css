@@ -3,12 +3,14 @@
     margin: 0;
     font-family: 'Courgette', cursive;
 }
-.dark{
+
+.dark {
     background-image: url(../images/night.jpeg);
     background-attachment: fixed;
     background-size: cover;
 }
- .nightsea {
+
+.nightsea {
     height: 240px;
     background-image: url(../images/nightsea.jpeg);
     background-size: 100% 100%;
@@ -20,7 +22,7 @@
 body {
     background-image: url(../images/Picture1.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .navbar {
@@ -77,6 +79,9 @@ body {
     color: deepskyblue;
     font-size: 30px;
     cursor: pointer;
+    position: fixed;
+    right: 0;
+
 }
 
 .navbar .nav-item .dropdown-menu {
@@ -96,46 +101,37 @@ body {
 
 .home {
     width: 100%;
-    height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
+    height: auto;
+    padding-bottom: 280px;
+    overflow: hidden;
 }
 
 .home .welcome {
-    margin-top: 65px;
-    height: 700px;
+
+    height: auto;
+    margin: 130px auto 0px auto;
+    position: relative;
+
 
 }
 
 .home .welcome p {
     text-align: center;
     font-weight: bold;
-    position: relative;
-    top: 150px;
+    padding-top: 100px;
     font-size: 30px;
     color: white;
-    animation-name: ani;
-    animation-iteration-count: 1;
-    animation-duration: 7s;
-
 }
 
-@keyframes ani {
-    0% {
-        top: 600px;
-    }
-
-    100% {
-        top: 150px;
-    }
+.home .welcome .button {
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.home .welcome button {
-    position: absolute;
-    bottom: 350px;
-    left: 500px;
+.home .welcome .button button {
+    margin-top: 50px;
     width: 250px;
     height: 50px;
     border-radius: 30px;
@@ -143,23 +139,11 @@ body {
     font-size: 20px;
     color: white;
     background-color: rgba(175, 238, 238, 0.716);
-    animation-name: ani2;
-    animation-iteration-count: 1;
-    animation-duration: 7s;
+
 }
 
-.home .welcome button:hover {
+.home .welcome .button button:hover {
     background-color: deepskyblue;
-}
-
-@keyframes ani2 {
-    0% {
-        bottom: 0px;
-    }
-
-    100% {
-        bottom: 350px;
-    }
 }
 
 .home .sea {
@@ -171,11 +155,10 @@ body {
 
 }
 
-
-
 .typeof {
     width: 100%;
-    height: 3200px;
+    height: auto;
+    padding-bottom: 30px;
     background-color: rgba(175, 238, 238, 0.716);
 
 
@@ -243,13 +226,13 @@ body {
 }
 
 .typeof .space {
-    height: 400px;
+    height: auto;
 }
 
 .typeof .type1 {
-    height: 500px;
+    height: auto;
     background-color: PaleTurquoise;
-    padding: 0;
+    padding: 0px 0px 30px 0;
     margin-top: 30px;
     border-top-left-radius: 700px;
     border-bottom-left-radius: 700px;
@@ -275,7 +258,7 @@ body {
 
 .typeof .type1 .text {
     padding: 0;
-    height: 500px;
+    height: auto;
     border-top-left-radius: 700px;
     border-bottom-left-radius: 700px;
 
@@ -298,8 +281,8 @@ body {
 }
 
 .typeof .type2 {
-    padding: 0;
-    height: 500px;
+    padding: 0px 0px 30px 0;
+    height: auto;
     background-color: LightSteelBlue;
     margin-top: 30px;
     border-top-right-radius: 700px;
@@ -325,7 +308,7 @@ body {
 
 .typeof .type2 .text {
     padding: 0;
-    height: 500px;
+    height: auto;
     border-top-left-radius: 700px;
     border-bottom-left-radius: 700px;
 
@@ -349,7 +332,8 @@ body {
 
 .swimbenfit {
     width: 100%;
-    height: 2700px;
+    height: auto;
+    padding-bottom: 30px;
     background-color: rgba(175, 238, 238, 0.716);
 
 }
@@ -502,13 +486,13 @@ body {
 .swimbenfit .benefit1 {
     margin-top: 30px;
     padding: 0;
-    height: 400px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.193);
 
 }
 
 .swimbenfit .benefit1 .text {
-    height: 400px;
+    height: auto;
 
 }
 
@@ -546,13 +530,13 @@ body {
 .swimbenfit .benefit2 {
     margin-top: 30px;
     padding: 0;
-    height: 400px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.193);
 
 }
 
 .swimbenfit .benefit2 .text {
-    height: 400px;
+    height: auto;
 
 }
 
@@ -582,7 +566,8 @@ body {
 }
 
 .swimhero {
-    height: 1350px;
+    height: auto;
+    padding-bottom: 50px;
     width: 100%;
     background-color: rgba(175, 238, 238, 0.716);
 
@@ -730,7 +715,8 @@ body {
 
 
 footer {
-    height: 400px;
+    height: auto;
+    padding-bottom: 90px;
     position: relative;
     overflow: hidden;
     background-color: #3586ff;
@@ -805,8 +791,11 @@ footer .wave {
 }
 
 footer .about {
-    height: 300px;
+    height: auto;
+}
 
+footer .row {
+    justify-content: center;
 }
 
 footer .about h1 {
@@ -822,8 +811,7 @@ footer .about p {
 }
 
 footer .refr {
-    height: 300px;
-
+    height: auto;
 }
 
 footer .refr ul {
@@ -832,7 +820,7 @@ footer .refr ul {
 }
 
 footer .refr ul li {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 footer .refr ul li a {
@@ -841,13 +829,15 @@ footer .refr ul li a {
 }
 
 footer .refr h1 {
+    margin-left: 30px;
     color: white;
     margin-top: 30px;
 
 }
 
 footer .copy {
-    height: 300px;
+    height: auto;
+    padding-bottom: 30px;
     font-size: 20px;
 
 
@@ -875,97 +865,509 @@ footer .copy p a:hover {
     color: blue;
 }
 
-@media (max-width:800px) {
+@media (max-width:780px) {
 
 
-    .navbar .navbar-brand {
-        color: deepskyblue;
-        font-size: 30px;
-        position: fixed;
-        left: 700px;
+    .navbar .navbar-collapse {
+        background-color: rgba(175, 238, 238, 0.716);
+        width: 100%;
+
+
+    }
+
+    .navbar .nav-item {
+
+        margin-left: 15px;
+
+
+    }
+
+    .navbar .nav-item .nav-link {
+
+        font-weight: bold;
+        color: RoyalBlue;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .navbar .nav-item .nav-link i {
+        color: rgba(240, 248, 255, 0.597);
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
     }
 
     .home {
         width: 100%;
-        height: 800px;
+        height: auto;
+        padding-bottom: 100px;
+        overflow: hidden;
+    }
+
+    .home .welcome {
+
+        height: auto;
+        margin: 30px auto 0px auto;
         position: relative;
-        display: flex;
-        justify-content: center;
+
+
     }
 
     .home .welcome p {
         text-align: center;
         font-weight: bold;
-        position: relative;
-        top: 165px;
-        font-size: 25px;
+        padding-top: 100px;
+        font-size: 23px;
         color: white;
-        animation-name: ani;
-        animation-iteration-count: 1;
-        animation-duration: 7s;
-
     }
 
-    @keyframes ani {
-        0% {
-            top: 600px;
-        }
-
-        100% {
-            top: 165px;
-        }
+    .home .welcome .button {
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
-    .home .welcome button {
-        position: absolute;
-        bottom: 350px;
-        left: 250px;
-        width: 210px;
+    .home .welcome .button button {
+        margin-top: 25px;
+        width: 200px;
         height: 50px;
         border-radius: 30px;
         border: none;
         font-size: 20px;
         color: white;
         background-color: rgba(175, 238, 238, 0.716);
-        animation-name: ani2;
-        animation-iteration-count: 1;
-        animation-duration: 7s;
+
     }
 
-    .home .welcome button:hover {
+    .home .welcome .button button:hover {
         background-color: deepskyblue;
     }
 
-    @keyframes ani2 {
-        0% {
-            bottom: 0px;
-        }
-
-        100% {
-            bottom: 350px;
-        }
-    }
-
-
-
-    .typeof {
-        width: 100%;
-        height: 3700px;
-        background-color: rgba(175, 238, 238, 0.716);
-
+    .home .sea {
+        height: auto;
+        padding-bottom: 220px;
+        background-image: url(../images/Picture2.jpg);
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 0;
 
     }
 
     .typeof .head {
-        height: 320px;
+        margin-top: 180px;
+        height: auto;
         text-align: center;
-
     }
 
     .typeof .head img {
         position: relative;
         top: 0;
-        right: 40px;
+        right: 20px;
+        width: 340px;
+        height: 300px;
+        animation-name: cloud;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+
+    @keyframes cloud {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: 50px;
+        }
+
+        100% {
+            top: 0;
+        }
+
+    }
+
+    .typeof .head h1 {
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        left: 30px;
+        z-index: 1000;
+        margin-right: 30px;
+        color: GhostWhite;
+        font-weight: bold;
+        font-size: 50px;
+        animation-name: text1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes text1 {
+        0% {
+            top: 90px;
+        }
+
+        50% {
+            top: 150px;
+        }
+
+        100% {
+            top: 90px;
+        }
+
+    }
+
+    .typeof .type1 {
+        height: auto;
+        background-color: PaleTurquoise;
+        padding: 30px 0px 0px 0;
+        margin-top: 30px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 200px;
+
+    }
+
+    .typeof .type1 .img {
+        height: 500px;
+        padding: 0;
+
+    }
+
+    .typeof .type1 .img img {
+        width: 100%;
+        height: 90%;
+        margin-top: 25px;
+        border-top-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 0;
+        box-shadow: 0 0 15px blue;
+
+
+    }
+
+    .typeof .type1 .text {
+        padding: 0;
+        height: auto;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 0;
+
+    }
+
+    .typeof .type1 .text h2 {
+        color: white;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 50px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .typeof .type1 .text p {
+        font-size: 25px;
+        margin:0 0 0 75px;
+        color: CornflowerBlue;
+    }
+
+    .typeof .type2 {
+        height: auto;
+        padding: 0px 0px 30px 0;
+        margin-top: 30px;
+        border-bottom-left-radius: 200px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 0px;
+        background-color: LightSteelBlue;
+    }
+
+    .typeof .type2 .img {
+        height: 500px;
+        padding: 0;
+
+    }
+
+    .typeof .type2 .img img {
+        width: 100%;
+        height: 90%;
+        margin-top: 25px;
+        border-bottom-left-radius: 200px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 0px;
+        box-shadow: 0 0 15px blue;
+
+
+    }
+
+    .typeof .type2 .text {
+        padding: 0;
+        height: auto;
+        padding-bottom: 50px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 200px;
+
+    }
+
+    .typeof .type2 .text h2 {
+        color: white;
+        margin-top: 30px;
+        text-align: center;
+        margin-right: 0px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .typeof .type2 .text p {
+        font-size: 25px;
+        margin:0 0 0 60px;
+        color: black; 
+    }
+    .swimbenfit .head {
+        height: 320px;
+        text-align: center;
+
+    }
+
+    .swimbenfit .head img {
+        position: relative;
+        top: 0;
+        right: 20px;
+        width: 340px;
+        height: 300px;
+        animation-name: cloud;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes cloud {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: 50px;
+        }
+
+        100% {
+            top: 0;
+        }
+
+    }
+
+    .swimbenfit .head h1 {
+        position: absolute;
+        top: 90px;
+        right:30px;
+        z-index: 1000;
+        margin-right: 0px;
+        color: GhostWhite;
+        font-weight: bold;
+        font-size: 50px;
+        animation-name: text1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes text1 {
+        0% {
+            top: 90px;
+        }
+
+        50% {
+            top: 150px;
+        }
+
+        100% {
+            top: 90px;
+        }
+
+    }
+
+    
+    .swimbenfit .number1 {
+        height: 100px;
+
+    }
+
+    .swimbenfit .number1 p {
+        font-size: 90px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+        color: white;
+
+    }
+
+    .swimbenfit .number1 .line {
+        margin-top: 0px;
+        margin-left: 150px;
+        position: relative;
+        bottom: 90px;
+        height: 10px;
+        background-color: white;
+    }
+
+    .swimbenfit .number2 {
+        height: 100px;
+        direction: rtl;
+
+    }
+
+    .swimbenfit .number2 p {
+        font-size: 90px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+        color: white;
+
+    }
+
+    .swimbenfit .number2 .line {
+        margin-top: 0px;
+        margin-left: 150px;
+        position: relative;
+        right: 140px;
+        top: 60px;
+        height: 10px;
+        background-color: white;
+    }
+
+    .swimbenfit .number3 {
+        height: 100px;
+
+    }
+
+    .swimbenfit .number3 p {
+        font-size: 90px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+        color: white;
+
+    }
+
+    .swimbenfit .number3 .line {
+        margin-top: 0px;
+        margin-left: 150px;
+        position: relative;
+        bottom: 90px;
+        height: 10px;
+        background-color: white;
+    }
+
+    .swimbenfit .number4 {
+        height: 100px;
+        direction: rtl;
+
+    }
+
+    .swimbenfit .number4 p {
+        font-size: 90px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+        color: white;
+
+    }
+
+    .swimbenfit .number4 .line {
+        margin-top: 0px;
+        margin-left: 150px;
+        position: relative;
+        right: 140px;
+        top: 60px;
+        height: 10px;
+        background-color: white;
+    }
+    .swimbenfit .benefit1 .image #donate {
+        width: 300px;
+        margin-left: 0px;
+        position: relative;
+        bottom: 100px;
+    }
+    .swimhero .head {
+        height: 320px;
+        text-align: center;
+
+    }
+
+    .swimhero .head img {
+        position: relative;
+        top: 0;
+        right: 20px;
+        width: 340px;
+        height: 300px;
+        animation-name: cloud;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes cloud {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: 50px;
+        }
+
+        100% {
+            top: 0;
+        }
+
+    }
+
+    .swimhero .head h1 {
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        z-index: 1000;
+        margin-right: 30px;
+        color: GhostWhite;
+        font-weight: bold;
+        font-size: 50px;
+        animation-name: text1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes text1 {
+        0% {
+            top: 90px;
+        }
+
+        50% {
+            top: 150px;
+        }
+
+        100% {
+            top: 90px;
+        }
+
+    }
+
+}
+@media(min-width:481px) and (max-width:767px){
+
+    .home .welcome {
+        height: auto;
+        margin: 140px auto 0px auto;
+        position: relative;
+
+
+    }
+    .typeof .head {
+       margin-top: 280px;
+        height: auto;
+        text-align: center;
+    }
+    .typeof .head img {
+        position: relative;
+        top: 0;
+        right: 10px;
         width: 550px;
         height: 300px;
         animation-name: cloud;
@@ -991,7 +1393,7 @@ footer .copy p a:hover {
     .typeof .head h1 {
         position: absolute;
         top: 130px;
-        right: 180px;
+        right: 50px;
         z-index: 1000;
         margin-right: 30px;
         color: GhostWhite;
@@ -1017,10 +1419,142 @@ footer .copy p a:hover {
         }
 
     }
+    .swimbenfit .head {
+         height: auto;
+         text-align: center;
+     }
+     .swimbenfit .head img {
+         position: relative;
+         top: 0;
+         right: 10px;
+         width: 550px;
+         height: 300px;
+         animation-name: cloud;
+         animation-duration: 7s;
+         animation-iteration-count: infinite;
+     }
+ 
+     @keyframes cloud {
+         0% {
+             top: 0;
+         }
+ 
+         50% {
+             top: 50px;
+         }
+ 
+         100% {
+             top: 0;
+         }
+ 
+     }
+ 
+     .swimbenfit .head h1 {
+         position: absolute;
+         top: 130px;
+         right: 150px;
+         z-index: 1000;
+         margin-right: 30px;
+         color: GhostWhite;
+         font-weight: bold;
+         font-size: 50px;
+         animation-name: text2;
+         animation-duration: 7s;
+         animation-iteration-count: infinite;
+ 
+     }
+ 
+     @keyframes text2 {
+         0% {
+             top: 130px;
+         }
+ 
+         50% {
+             top: 170px;
+         }
+ 
+         100% {
+             top: 130px;
+         }
+ 
+     }
+     .swimhero .head {
+        height: auto;
+        text-align: center;
+    }
+    .swimhero .head img {
+        position: relative;
+        top: 0;
+        right: 10px;
+        width: 550px;
+        height: 300px;
+        animation-name: cloud;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes cloud {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: 50px;
+        }
+
+        100% {
+            top: 0;
+        }
+
+    }
+
+    .swimhero .head h1 {
+        position: absolute;
+        top: 130px;
+        right: 170px;
+        z-index: 1000;
+        margin-right: 30px;
+        color: GhostWhite;
+        font-weight: bold;
+        font-size: 50px;
+        animation-name: text2;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes text2 {
+        0% {
+            top: 130px;
+        }
+
+        50% {
+            top: 170px;
+        }
+
+        100% {
+            top: 130px;
+        }
+
+    }
+}
+
+/* 
+@media (max-width:800px) {
+
+   .typeof .head {
+        height: 320px;
+        text-align: center;
+
+    }
+
+    
+   
 
     .typeof .space {
         display: none;
     }
+
 
     .typeof .type1 {
         height: 500px;
@@ -1644,6 +2178,7 @@ footer .copy p a:hover {
         background-size: 100% 100%;
         background-attachment: fixed;
         overflow-x: hidden;
+       
 
 
     }
@@ -1658,36 +2193,6 @@ footer .copy p a:hover {
         background-color: rgba(175, 238, 238, 0.716);
 
     }
-
-    .navbar .navbar-collapse {
-        background-color: rgba(175, 238, 238, 0.716);
-        width: 100%;
-
-
-    }
-
-    .navbar .nav-item {
-
-        margin-left: 15px;
-
-
-    }
-
-    .navbar .nav-item .nav-link {
-
-        font-weight: bold;
-        color: RoyalBlue;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .navbar .nav-item .nav-link i {
-        color: rgba(240, 248, 255, 0.597);
-        position: absolute;
-        bottom: 40px;
-        left: 20px;
-    }
-
     @keyframes drop {
         0% {
             bottom: 40px
@@ -1728,86 +2233,6 @@ footer .copy p a:hover {
 
 
 
-    .home {
-
-        width: 100%;
-        height: 700px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .home .welcome {
-        margin-top: 0px;
-        height: 700px;
-
-
-    }
-
-    .home .welcome p {
-        text-align: center;
-        font-weight: bold;
-        position: relative;
-        top: 150px;
-        font-size: 25px;
-        color: white;
-        animation-name: ani;
-        animation-iteration-count: 1;
-        animation-duration: 7s;
-
-    }
-
-    @keyframes ani {
-        0% {
-            top: 600px;
-        }
-
-        100% {
-            top: 150px;
-        }
-    }
-
-    .home .welcome button {
-        position: absolute;
-        bottom: 250px;
-        left: 75px;
-        width: 210px;
-        height: 50px;
-        border-radius: 30px;
-        border: none;
-        font-size: 20px;
-        color: white;
-        background-color: rgba(175, 238, 238, 0.716);
-        animation-name: ani2;
-        animation-iteration-count: 1;
-        animation-duration: 7s;
-    }
-
-    .home .welcome button:hover {
-        background-color: deepskyblue;
-    }
-
-    @keyframes ani2 {
-        0% {
-            bottom: 0px;
-        }
-
-        100% {
-            bottom: 250px;
-        }
-    }
-
-    .home .sea {
-        height: 200px;
-        background-image: url(../images/Picture2.jpg);
-        background-size: 100% 100%;
-        position: absolute;
-        bottom: 0px;
-
-    }
-
-
 
     .typeof {
         width: 100%;
@@ -1817,72 +2242,7 @@ footer .copy p a:hover {
 
     }
 
-    .typeof .head {
-        height: 320px;
-        text-align: center;
-    }
-
-    .typeof .head img {
-        position: relative;
-        top: 0;
-        right: 20px;
-        width: 395px;
-        height: 300px;
-        animation-name: cloud;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-
-    }
-
-    @keyframes cloud {
-        0% {
-            top: 0;
-        }
-
-        50% {
-            top: 50px;
-        }
-
-        100% {
-            top: 0;
-        }
-
-    }
-
-    .typeof .head h1 {
-        position: absolute;
-        top: 90px;
-        right: 0px;
-        z-index: 1000;
-        margin-right: 30px;
-        color: GhostWhite;
-        font-weight: bold;
-        font-size: 50px;
-        animation-name: text1;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-
-    }
-
-    @keyframes text1 {
-        0% {
-            top: 90px;
-        }
-
-        50% {
-            top: 150px;
-        }
-
-        100% {
-            top: 90px;
-        }
-
-    }
-
-    .typeof .space {
-        height: 400px;
-        display: none;
-    }
+   
 
     .typeof .type1 {
         height: 1000px;
@@ -1997,165 +2357,7 @@ footer .copy p a:hover {
 
     }
 
-    .swimbenfit .head {
-        height: 320px;
-        text-align: center;
-
-    }
-
-    .swimbenfit .head img {
-        position: relative;
-        top: 0;
-        right: 20px;
-        width: 395px;
-        height: 300px;
-        animation-name: cloud;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-
-    }
-
-    @keyframes cloud {
-        0% {
-            top: 0;
-        }
-
-        50% {
-            top: 50px;
-        }
-
-        100% {
-            top: 0;
-        }
-
-    }
-
-    .swimbenfit .head h1 {
-        position: absolute;
-        top: 90px;
-        right: 0px;
-        z-index: 1000;
-        margin-right: 30px;
-        color: GhostWhite;
-        font-weight: bold;
-        font-size: 50px;
-        animation-name: text1;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-
-    }
-
-    @keyframes text1 {
-        0% {
-            top: 90px;
-        }
-
-        50% {
-            top: 150px;
-        }
-
-        100% {
-            top: 90px;
-        }
-
-    }
-
-    .swimbenfit .number1 {
-        height: 100px;
-
-    }
-
-    .swimbenfit .number1 p {
-        font-size: 90px;
-        position: relative;
-        left: 0px;
-        bottom: 10px;
-        color: white;
-
-    }
-
-    .swimbenfit .number1 .line {
-        margin-top: 0px;
-        margin-left: 150px;
-        position: relative;
-        bottom: 90px;
-        height: 10px;
-        background-color: white;
-    }
-
-    .swimbenfit .number2 {
-        height: 100px;
-        direction: rtl;
-
-    }
-
-    .swimbenfit .number2 p {
-        font-size: 90px;
-        position: relative;
-        left: 0px;
-        bottom: 10px;
-        color: white;
-
-    }
-
-    .swimbenfit .number2 .line {
-        margin-top: 0px;
-        margin-left: 150px;
-        position: relative;
-        right: 140px;
-        top: 60px;
-        height: 10px;
-        background-color: white;
-    }
-
-    .swimbenfit .number3 {
-        height: 100px;
-
-    }
-
-    .swimbenfit .number3 p {
-        font-size: 90px;
-        position: relative;
-        left: 0px;
-        bottom: 10px;
-        color: white;
-
-    }
-
-    .swimbenfit .number3 .line {
-        margin-top: 0px;
-        margin-left: 150px;
-        position: relative;
-        bottom: 90px;
-        height: 10px;
-        background-color: white;
-    }
-
-    .swimbenfit .number4 {
-        height: 100px;
-        direction: rtl;
-
-    }
-
-    .swimbenfit .number4 p {
-        font-size: 90px;
-        position: relative;
-        left: 0px;
-        bottom: 10px;
-        color: white;
-
-    }
-
-    .swimbenfit .number4 .line {
-        margin-top: 0px;
-        margin-left: 150px;
-        position: relative;
-        right: 140px;
-        top: 60px;
-        height: 10px;
-        background-color: white;
-    }
-
+   
     .swimbenfit .benefit1 {
         margin-top: 30px;
         padding: 0;
@@ -2194,12 +2396,7 @@ footer .copy p a:hover {
         height: 100%;
     }
 
-    .swimbenfit .benefit1 .image #donate {
-        width: 300px;
-        margin-left: 0px;
-        position: relative;
-        bottom: 100px;
-    }
+   
 
     .swimbenfit .benefit2 {
         margin-top: 30px;
@@ -2258,67 +2455,7 @@ footer .copy p a:hover {
 
     }
 
-    .swimhero .head {
-        height: 320px;
-        text-align: center;
-
-    }
-
-    .swimhero .head img {
-        position: relative;
-        top: 0;
-        right: 20px;
-        width: 395px;
-        height: 300px;
-        animation-name: cloud;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes cloud {
-        0% {
-            top: 0;
-        }
-
-        50% {
-            top: 50px;
-        }
-
-        100% {
-            top: 0;
-        }
-
-    }
-
-    .swimhero .head h1 {
-        position: absolute;
-        top: 90px;
-        right: 0px;
-        z-index: 1000;
-        margin-right: 30px;
-        color: GhostWhite;
-        font-weight: bold;
-        font-size: 50px;
-        animation-name: text1;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-
-    }
-
-    @keyframes text1 {
-        0% {
-            top: 90px;
-        }
-
-        50% {
-            top: 150px;
-        }
-
-        100% {
-            top: 90px;
-        }
-
-    }
+    
     .swimhero .hero .caption h1 {
         margin-top: 100px;
         font-size: 30px;
@@ -2501,4 +2638,4 @@ footer .copy p a:hover {
         color: blue;
     }
 
-}
+} */
